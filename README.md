@@ -15,7 +15,6 @@ Time spent: 13 hours spent in total
 * [ ] Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard
 * [x] You should be able to swipe through the welcome screens instead of just tapping them
 
-
 **Additional** 
 * Paging control stays in one location and updates when scrolling through pages
 * When favoriting a file in one view control, the image view in another view controler is updated by passing data through NSNotificationCenter
@@ -23,6 +22,11 @@ Time spent: 13 hours spent in total
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
+
+![dropbox gif](dropbox demo.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ## Notes
 
