@@ -2,6 +2,7 @@
 Click-through flow of Dropbox
 
 Submitted by: Sam Huskins
+
 Time spent: 13 hours spent in total
 
 ## User Stories
