@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC51A3E2752928F95AF44E4B3EBB627954EDD2A3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6C90ACE50B3B31467C139D07B158B11AF24FDF71" : 0,
+    "EC51A3E2752928F95AF44E4B3EBB627954EDD2A3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9E42D053-6A93-4559-8444-692863AA010F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6C90ACE50B3B31467C139D07B158B11AF24FDF71" : "dropbox\/dropbox\/",
+    "EC51A3E2752928F95AF44E4B3EBB627954EDD2A3" : "dropbox\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dropbox",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dropbox.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/frecksnspecs\/dropbox.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C90ACE50B3B31467C139D07B158B11AF24FDF71"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/frecksnspecs\/dropbox.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC51A3E2752928F95AF44E4B3EBB627954EDD2A3"
+    }
+  ]
+}

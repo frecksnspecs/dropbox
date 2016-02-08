@@ -2,7 +2,7 @@
 Click-through flow of Dropbox
 
 Submitted by: Sam Huskins
-Time spent: 10 hours spent in total
+Time spent: 13 hours spent in total
 
 ## User Stories
 **Required:**
@@ -11,10 +11,14 @@ Time spent: 10 hours spent in total
 * [x] User can follow the sign in flow
 
 **Optional:**
+* [x] Add a detail view for one of the files and implement favoriting the file
+* [ ] Add UITextFields for the forms so you can actually type in them and handle dismissing the keyboard
 * [x] You should be able to swipe through the welcome screens instead of just tapping them
 
-**Additional** 
 
+**Additional** 
+* Paging control stays in one location and updates when scrolling through pages
+* When favoriting a file in one view control, the image view in another view controler is updated by passing data through NSNotificationCenter
 
 ## Video Walkthrough 
 
@@ -22,7 +26,7 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Had trouble getting page controls working based on how assignment laid it out, but was able to get it to work using another tutorial and a hack to hide static page control in assets.
+Had trouble getting page controls working based on how assignment laid it out, but was able to get it to work using another tutorial and a hack to hide static page control in assets. 
 
 ## License
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="xJP-Ss-4O4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -176,6 +176,13 @@
                                 <rect key="frame" x="0.0" y="65" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9da-WM-7KZ">
+                                <rect key="frame" x="0.0" y="262" width="320" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ZNx-AB-MAb" kind="push" id="rzZ-LE-LhO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -184,6 +191,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sgv-rf-weE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2448" y="2702"/>
+        </scene>
+        <!--Favorite File View Controller-->
+        <scene sceneID="mZe-yW-2dz">
+            <objects>
+                <viewController id="ZNx-AB-MAb" customClass="FavoriteFileViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8L8-VQ-AZr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="favorited" id="eyC-s7-odI">
+                                <rect key="frame" x="0.0" y="63" width="320" height="417"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n3d-yv-M4f">
+                                <rect key="frame" x="284" y="85" width="26" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="onFavSelected:" destination="ZNx-AB-MAb" eventType="touchUpInside" id="l5Y-wW-1gN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sBe-3X-hHu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdn-GA-B9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="3497"/>
         </scene>
         <!--Photos-->
         <scene sceneID="Vz0-a5-U5w">
@@ -738,7 +775,7 @@
         <!--Favorites-->
         <scene sceneID="8jR-bm-gZm">
             <objects>
-                <viewController id="4DC-E7-eER" sceneMemberID="viewController">
+                <viewController id="4DC-E7-eER" customClass="FavoritesExistingViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMM-i0-1zH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -751,6 +788,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="d52-jx-xiD"/>
+                    <connections>
+                        <outlet property="favoritesImageView" destination="IJE-9k-nOy" id="kvG-E2-qny"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EED-CN-C2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -846,6 +886,9 @@
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
         <image name="existing_photos" width="320" height="725"/>
+        <image name="favorite_btn" width="26" height="25"/>
+        <image name="favorited" width="320" height="417"/>
+        <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
@@ -858,7 +901,7 @@
         <image name="terms" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="izE-7v-2p0"/>
+        <segue reference="4LZ-dy-CVb"/>
         <segue reference="6sW-4W-efA"/>
     </inferredMetricsTieBreakers>
 </document>
